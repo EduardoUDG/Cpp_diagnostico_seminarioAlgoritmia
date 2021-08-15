@@ -15,7 +15,7 @@ void Almacen::mostrar()
     cout << setw(5) << "ID";
     cout << setw(20) << "Origen";
     cout << setw(20) << "Destino";
-    cout << setw(15) << "Peso";
+    cout << setw(15) << "Peso en (gr)";
     cout << endl;
 
     for (size_t i = 0; i < paquetes.size(); i++){

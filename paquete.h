@@ -13,7 +13,7 @@ private:
     string id;
     string origen;
     string destino;
-    int peso;
+    float peso;
 public:
     Paquete();
     Paquete(const string &id, 
@@ -26,8 +26,8 @@ public:
     string getOrigen();
     void setDestino(const string &fuerza);
     string getDestino();
-    void setPeso(int v);
-    int getPeso();
+    void setPeso(float v);
+    float getPeso();
 
     /* Primera carga de operador */
     friend ostream& operator<<(ostream &out, const Paquete &p)
@@ -53,7 +53,7 @@ public:
         cout << "Destino: ";
         getline(cin, p.destino);
         
-        cout << "Peso: ";
+        cout << "Peso en (gr): ";
         cin >> p.peso;
 
         return in;

@@ -30,9 +30,9 @@ void Paquete::setDestino(const string &v){
 string Paquete::getDestino(){
     return destino;
 }
-void Paquete::setPeso(int v){
+void Paquete::setPeso(float v){
     peso = v;
 }
-int Paquete::getPeso(){
+float Paquete::getPeso(){
     return peso;
 }
